@@ -1,13 +1,41 @@
+<style>
+  .haiku {
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      margin: 100px auto;
+      background-color: black;
+      border: 20px solid grey;
+      font-family: Roboto;
+      font-size: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 50%;
+  }
+  a {
+    color: white
+  }
+  .haiku span {
+    margin: 15px; /* Allows each span to take equal space */
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
 <html>
   <body>
-    <p>
+    <div class="haiku">
+    <span>
       Isolation cells,
-    </p>
-    <p>
+    </span>
+    <span>
       Wires weave a world connected,
-    </p>
-    <p>
+    </span>
+    <span>
       <a href="https://gserniute.github.io/haikuproject"/>      Threads link distant souls.</a>
-    </p>
+    </span>
+  </div>
   </body>
 </html>
