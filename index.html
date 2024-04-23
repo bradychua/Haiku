@@ -23,9 +23,9 @@
   }
 
   canvas {
-    width: 800px;
+    width: 1800px;
     /* Set canvas width to 100% */
-    height: 800px;
+    height: 1000px;
     /* Set canvas height to 100% */
     z-index: 1;
     position: absolute;
@@ -76,17 +76,17 @@
   document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.setAttribute('width', '500');
-    canvas.setAttribute('height', '500');
+    canvas.setAttribute('width', '1800');
+    canvas.setAttribute('height', '1000');
 
     const radius = 10; // Maximum radius of each circle
     const circles = [];
 
     function create_circles() {
-      for (let r = 0; r <= 7; r++) {
-        for (let c = 0; c <= 5; c++) {
-          let x = (canvas.width / 5) * (c);
-          let y = (canvas.height / 7) * (r);
+      for (let r = 0; r <= 4; r++) {
+        for (let c = 0; c <= 8; c++) {
+          let x = (canvas.width / 8) * (c);
+          let y = (canvas.height / 4) * (r);
           ctx.beginPath();
           ctx.arc(x, y, radius, 0, 2 * Math.PI);
           ctx.fillStyle = 'black';
